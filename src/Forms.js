@@ -24,6 +24,7 @@ import React, { Component } from 'react'
          })
      }
      handlerGenderChange =(event) => {
+         debugger;
          this.setState({
              gender :event.target.value
          })
@@ -57,9 +58,9 @@ import React, { Component } from 'react'
               <input type="text" value={this.state.email} onChange = {this.handlerEmailChange} /> <br></br> 
 
               <label > Gender:</label>
-              <input type="checkbox" checked={this.state.gender} onChange={this.handlerGenderChange} />
+              <input type="checkbox" value="female" onChange={this.handlerGenderChange} />
               <label >Female</label><br></br>
-              <input type="checkbox" />
+              <input type="checkbox" value ="male" onChange={this.handlerGenderChange} />
               <label>Male</label><br></br>
 
               <label>Nationality:</label>
