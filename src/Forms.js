@@ -49,43 +49,41 @@ import React, { Component } from 'react'
         
         return (
             <form onSubmit = {this.handlerSubmitChange}>
-                <h2>Applicant Details</h2>
+               
             
-            <table>
-            <td>
-                <tr> <label> Name: </label></tr>
-                <tr><input type="text" value={this.state.uname} onChange = {this.handlerNameChange} /> </tr>
-            </td>
-            <td>
-              <tr><label> Email: </label></tr>
-              <tr><input type="text" value={this.state.email} onChange = {this.handlerEmailChange} />  </tr>
-            </td>
-            <td>
-              <tr><label > Gender:</label></tr>
-              <tr><input type="checkbox" value="female" onChange={this.handlerGenderChange} /></tr>
-              <tr><label >Female</label><br></br></tr>
-              <tr><input type="checkbox" value ="male" onChange={this.handlerGenderChange} /></tr>
-              <tr><label>Male</label><br></br></tr>
-            </td>
-            <td>
-              <tr><label>Nationality:</label>
-              <select value={this.state.nation} onChange={this.handlerNationChange}>
+            
+            <h2>Applicant Details</h2>
+             <label> Name: 
+            <input type="text" value={this.state.uname} onChange = {this.handlerNameChange} /> 
+            </label><br></br>
+            
+              <label> Email: 
+              <input type="text" value={this.state.email} onChange = {this.handlerEmailChange} /> 
+              </label><br></br>
+            
+              <label > Gender:
+              <input type="checkbox" value="female" onChange={this.handlerGenderChange} />
+              <label >Female</label>
+              <input type="checkbox" value ="male" onChange={this.handlerGenderChange} />
+              <label>Male</label><br></br>
+              </label><br></br>
+            
+            <label>Nationality:
+            <select value={this.state.nation} onChange={this.handlerNationChange}>
                   <option value="0">-- Choose an Option -- </option>
                   <option value="Indian">Indian</option>
                   <option value="Canadian">Canadian</option>
                   <option value="American">American</option>
                     <option value="others">Others</option>
               </select> <br></br>
-              </tr>
-              </td>
-            <td>
-              <tr><label>Upload file:</label><br></br></tr>
-             <tr><input type="file" onChange= {this.handlerFileChange} name="fileupload"  /></tr>
-             </td>
-             </table>
-             
-            <input type="submit" value="Submit" />
+              </label><br></br>
             
+            <label>Upload file:
+            <input type="file" onChange= {this.handlerFileChange} name="fileupload"  />
+            </label><br></br>
+                                    
+            <label><input type="submit" value="Submit" />
+            </label>
             </form>
             
         );
