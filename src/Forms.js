@@ -74,7 +74,7 @@ import React, { Component } from 'react'
 
               <label>Upload file:</label><br></br>
              <input type="file" value={this.state.fileSelect} onChange= {this.handlerFileChange} name="fileupload"  />
-            </div> <br></br>
+            </div> <br></br>   
 
             <input type="submit" value="Submit" />
             </form>
