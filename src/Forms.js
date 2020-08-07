@@ -41,7 +41,7 @@ import React, { Component } from 'react'
     }
     // submitting
      handlerSubmitChange =(event) => {
-        alert(`name is ${this.state.uname} ${this.state.email} ${this.state.gender} ${this.state.nation} ${this.state.file} ` );
+        alert(`details are  ${this.state.uname} ${this.state.email} ${this.state.gender} ${this.state.nation} ${this.state.file} ` );
         event.preventDefault();
      }
     render() {
