@@ -40,7 +40,7 @@ handleChange = (input) => (e) =>{
         const {FirstName,LastName,Email,Occupation,City,Bio} = this.state;
         const values = {FirstName,LastName,Email,Occupation,City,Bio};
         console.log(this.state);
-                switch (step) {
+                switch (step) { 
                     case 1:
                         return(
                         <FormUserDetailsSecStep nextStep={this.nextStep} values={values} handleChange={this.handleChange}/>

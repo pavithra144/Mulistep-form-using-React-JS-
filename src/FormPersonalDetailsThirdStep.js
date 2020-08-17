@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button';
 
 export class FormPersonalDetailsThirdStep extends Component {
     continue = (e) => {
-        e.preventDefault();
+        e.preventDefault(); 
         this.props.nextStep();
 
     };

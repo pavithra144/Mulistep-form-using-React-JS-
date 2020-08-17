@@ -25,7 +25,7 @@ import AppBar from '@material-ui/core/AppBar';
                     <MuiThemeProvider>
                               <Dialog
                                 open
-                                fullWidth
+                                fullWidth 
                              maxWidth='sm' >
           
                         <AppBar title="Confirm before Submitting" />
