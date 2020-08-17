@@ -7,7 +7,7 @@ import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 export class Success extends Component {
   continue = (e) => {
     e.preventDefault();
-    // PROCESS FORM //
+    // PROCESS FORM // 
     this.props.nextStep();
   };
 

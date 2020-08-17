@@ -19,11 +19,11 @@ export class FormPersonalDetailsThirdStep extends Component {
     render() {
         const {values,handleChange} = this.props;
         return (
-            <MuiThemeProvider>
+            <MuiThemeProvider> 
                 <Dialog
-                   open
+                   open 
                    fullWidth
-                   maxWidth='sm'
+                    maxWidth='sm'
                 >
             <AppBar title="Enter Personal details" />
             <TextField placeholder="Enter your Occupation" label="Occupation" onChange={handleChange('Occupation')} defaultValue={values.Occupation} margin="normal" fullWidth /><br />
