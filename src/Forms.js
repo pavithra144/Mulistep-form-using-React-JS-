@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './FormStyles.css';
 
  class Forms extends Component {
      constructor(props) {
@@ -48,27 +49,25 @@ import React, { Component } from 'react'
     
         
         return (
-            <form onSubmit = {this.handlerSubmitChange}>
-               
-            
+            <form onSubmit = {this.handlerSubmitChange}>         
             
             <h2>Applicant Details</h2>
              <label> Name: 
-            <input type="text" value={this.state.uname} onChange = {this.handlerNameChange} /> 
+             <input type="text" value={this.state.uname} onChange = {this.handlerNameChange} /> 
             </label><br></br>
             
               <label> Email: 
               <input type="text" value={this.state.email} onChange = {this.handlerEmailChange} /> 
               </label><br></br>
             
-              <label > Gender:
+              <label className="genderStyle"> Gender:
               <input type="checkbox" value="female" onChange={this.handlerGenderChange} />
               <label >Female</label>
               <input type="checkbox" value ="male" onChange={this.handlerGenderChange} />
               <label>Male</label><br></br>
               </label><br></br>
             
-            <label>Nationality:
+            <label className="nationStyle">Nationality:
             <select value={this.state.nation} onChange={this.handlerNationChange}>
                   <option value="0">-- Choose an Option -- </option>
                   <option value="Indian">Indian</option>
@@ -78,11 +77,11 @@ import React, { Component } from 'react'
               </select> <br></br>
               </label><br></br>
             
-            <label>Upload file:
+            <label className="fileUpload">Upload file:
             <input type="file" onChange= {this.handlerFileChange} name="fileupload"  />
             </label><br></br>
                                     
-            <label><input type="submit" value="Submit" />
+            <label ><input type="submit" value="Submit" />
             </label>
             </form>
             
